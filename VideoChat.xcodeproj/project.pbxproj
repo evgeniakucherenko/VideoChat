@@ -14,6 +14,8 @@
 		623294A82CE63A7F00CDA3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623294A72CE63A7F00CDA3DC /* Assets.xcassets */; };
 		623294B32CEA5F4800CDA3DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623294B22CEA5F4800CDA3DC /* LoginViewController.swift */; };
 		623294B52CEA616A00CDA3DC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623294B42CEA616A00CDA3DC /* LaunchViewController.swift */; };
+		623294BC2CEB7ECE00CDA3DC /* client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 623294BB2CEB7ECE00CDA3DC /* client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist */; };
+		623294BF2CEB8F2500CDA3DC /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 623294BE2CEB8F2500CDA3DC /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		623294AC2CE63A7F00CDA3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623294B22CEA5F4800CDA3DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		623294B42CEA616A00CDA3DC /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		623294BB2CEB7ECE00CDA3DC /* client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623294BF2CEB8F2500CDA3DC /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			children = (
 				6232949D2CE63A7E00CDA3DC /* VideoChat */,
 				6232949C2CE63A7E00CDA3DC /* Products */,
+				623294BD2CEB8F2500CDA3DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +69,18 @@
 				623294A02CE63A7E00CDA3DC /* SceneDelegate.swift */,
 				623294A22CE63A7E00CDA3DC /* ViewController.swift */,
 				623294A42CE63A7E00CDA3DC /* Main.storyboard */,
+				623294BB2CEB7ECE00CDA3DC /* client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist */,
 				623294A72CE63A7F00CDA3DC /* Assets.xcassets */,
 				623294AC2CE63A7F00CDA3DC /* Info.plist */,
 			);
 			path = VideoChat;
+			sourceTree = "<group>";
+		};
+		623294BD2CEB8F2500CDA3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +99,9 @@
 			dependencies = (
 			);
 			name = VideoChat;
+			packageProductDependencies = (
+				623294BE2CEB8F2500CDA3DC /* GoogleSignIn */,
+			);
 			productName = VideoChat;
 			productReference = 6232949B2CE63A7E00CDA3DC /* VideoChat.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 623294922CE63A7E00CDA3DC;
+			packageReferences = (
+				623294B62CEB751F00CDA3DC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 6232949C2CE63A7E00CDA3DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				623294A82CE63A7F00CDA3DC /* Assets.xcassets in Resources */,
+				623294BC2CEB7ECE00CDA3DC /* client_747016525733-42k2ei1t7ol6rifjng495r0d54df4tqe.apps.googleusercontent.com.plist in Resources */,
 				623294A62CE63A7E00CDA3DC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 737B4WA89Q;
@@ -303,6 +324,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kucherenko.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 737B4WA89Q;
@@ -331,6 +354,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kucherenko.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		623294B62CEB751F00CDA3DC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		623294BE2CEB8F2500CDA3DC /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 623294B62CEB751F00CDA3DC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 623294932CE63A7E00CDA3DC /* Project object */;
 }
